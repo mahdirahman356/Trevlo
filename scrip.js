@@ -2,6 +2,7 @@
 
  document.getElementById('addCart-1').addEventListener('click',function(event){
     add()
+    addS()
     let place = event.target.parentNode.parentNode.childNodes[1].innerText
     let price = event.target.parentNode.parentNode.childNodes[3].childNodes[1].innerText
     let addList = document.getElementById('content')
@@ -24,6 +25,7 @@
 })
 document.getElementById('addCart-2').addEventListener('click',function(event){
     add()
+    addS()
     let place = event.target.parentNode.parentNode.childNodes[1].innerText
     let price = event.target.parentNode.parentNode.childNodes[3].childNodes[1].innerText
     let addList = document.getElementById('content')
@@ -46,6 +48,7 @@ document.getElementById('addCart-2').addEventListener('click',function(event){
 })
 document.getElementById('addCart-3').addEventListener('click',function(event){
     add()
+    addS()
     let place = event.target.parentNode.parentNode.childNodes[1].innerText
     let price = event.target.parentNode.parentNode.childNodes[3].childNodes[1].innerText
     let addList = document.getElementById('content')
@@ -67,6 +70,7 @@ document.getElementById('addCart-3').addEventListener('click',function(event){
 })
 document.getElementById('addCart-4').addEventListener('click',function(event){
     add()
+    addS()
     let place = event.target.parentNode.parentNode.childNodes[1].innerText
     let price = event.target.parentNode.parentNode.childNodes[3].childNodes[1].innerText
     let addList = document.getElementById('content')
@@ -93,6 +97,12 @@ function add(){
         let countConvertNum = parseInt(countNum)
         let countConvertNumUp = countConvertNum + 1
         let countNumber = count.innerText = countConvertNumUp
+}
+function addS(){
+    let count = document.getElementById('count');
+    let countNum = count.innerText
+    let constSNum = document.getElementById('count-s')
+    let constInner = constSNum.innerText = countNum
 }
 
 
